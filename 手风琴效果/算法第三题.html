@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+   var strr='aaasssssbbbcccccccccccccccccccccc'
+          function change(arr){
+          	for(var j=0,len=0,str1='';j<arr.length;j++){
+          	var x = arr.substr(j,1);
+          	var y = arr.split(x);
+          	console.log(j)
+          	console.log(x)
+          	console.log(y)
+          	if(y.length-1>len){
+          		len = y.length-1;
+          		str1=x+','+len;
+          		console.log(len)
+                console.log(str1)
+          	}
+          }
+				return str1;
+          }
+          
+          console.log(change(strr));
+
+	</script>
+	
+</body>
+</html>
